@@ -2,7 +2,7 @@
   "name": "passion-clone-tailwind-cra",
   "version": "1.0.0",
   "private": false,
-  "homepage": "https://github.com/prabhacha/passionweb",
+  "homepage": "https://prabhacha.github.io/passionweb",
   "dependencies": {
     "autoprefixer": "^10.4.21",
     "framer-motion": "^12.23.12",

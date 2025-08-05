@@ -61,14 +61,15 @@ export default function App() {
   animate={{ opacity: 1 }}
   transition={{ duration: 1 }}
 >
-  <video
-    className="absolute top-0 left-0 w-full h-full object-cover"
-    src="/videosample.mp4"
-    autoPlay
-    muted
-    loop
-    playsInline
-  />
+<video
+  className="absolute top-0 left-0 w-full h-full object-cover"
+  src="/videosample.mp4"
+  autoPlay
+  muted
+  loop
+  playsInline
+/>
+
 </motion.section>
 
 
