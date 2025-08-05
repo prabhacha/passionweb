@@ -55,22 +55,19 @@ export default function App() {
       </header>
 
       {/* Hero */}
-<motion.section
-  className="relative w-full h-[300px] md:h-[450px] lg:h-[550px] overflow-hidden mt-16"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 1 }}
->
-<video
-  className="absolute top-0 left-0 w-full h-full object-cover"
-  src="/videosample.mp4"
-  autoPlay
-  muted
-  loop
-  playsInline
-/>
+<section className="relative w-full h-[500px] bg-black overflow-hidden mt-16">
+  <video
+    className="absolute inset-0 w-full h-full object-cover"
+    src="hero-video-sample.mp4"
+    autoPlay
+    muted
+    loop
+    playsInline
+  >
+    Your browser does not support the video tag.
+  </video>
+</section>
 
-</motion.section>
 
 
 
