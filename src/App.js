@@ -58,7 +58,7 @@ export default function App() {
 <section className="relative w-full h-[500px] bg-black overflow-hidden mt-16">
   <video
     className="absolute inset-0 w-full h-full object-cover"
-    src="hero-video-sample.mp4"
+    src="samplevideo1.mp4"
     autoPlay
     muted
     loop
@@ -67,7 +67,6 @@ export default function App() {
     Your browser does not support the video tag.
   </video>
 </section>
-
 
 
 
