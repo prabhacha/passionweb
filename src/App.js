@@ -57,12 +57,10 @@ export default function App() {
       {/* Hero */}
 <section className="relative w-full h-[500px] bg-black overflow-hidden mt-16">
   <video
-    className="absolute inset-0 w-full h-full object-cover"
-    src="samplevideo1.mp4"
-    autoPlay
-    muted
-    loop
-    playsInline
+    className="w-full h-[500px] object-cover"
+  src="samplevideo.mp4"
+  controls
+  playsInline
   >
     Your browser does not support the video tag.
   </video>
