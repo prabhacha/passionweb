@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/passionweb/static/css/main.ac233b0b.css",
-    "main.js": "/passionweb/static/js/main.126b73d9.js",
+    "main.js": "/passionweb/static/js/main.4bb18f77.js",
     "index.html": "/passionweb/index.html",
     "main.ac233b0b.css.map": "/passionweb/static/css/main.ac233b0b.css.map",
-    "main.126b73d9.js.map": "/passionweb/static/js/main.126b73d9.js.map"
+    "main.4bb18f77.js.map": "/passionweb/static/js/main.4bb18f77.js.map"
   },
   "entrypoints": [
     "static/css/main.ac233b0b.css",
-    "static/js/main.126b73d9.js"
+    "static/js/main.4bb18f77.js"
   ]
 }
