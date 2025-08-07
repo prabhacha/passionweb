@@ -55,7 +55,7 @@ export default function App() {
       </header>
 
       {/* Hero */}
-<section className="relative w-full h-[500px] bg-black overflow-hidden mt-16">
+{/* <section className="relative w-full h-[500px] bg-black overflow-hidden mt-16">
   <video
     className="w-full h-[500px] object-cover"
   src="samplevideo.mp4"
@@ -64,7 +64,15 @@ export default function App() {
   >
     Your browser does not support the video tag.
   </video>
-</section>
+</section> */}
+<video
+  src="Our-Passion.mp4"
+  controls
+  width="100%"
+  height="360"
+  autoPlay
+  playsInline
+/>
 
 
 
