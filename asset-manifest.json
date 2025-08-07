@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/passionweb/static/css/main.1fe394f6.css",
-    "main.js": "/passionweb/static/js/main.828c6979.js",
+    "main.css": "/passionweb/static/css/main.ac233b0b.css",
+    "main.js": "/passionweb/static/js/main.126b73d9.js",
     "index.html": "/passionweb/index.html",
-    "main.1fe394f6.css.map": "/passionweb/static/css/main.1fe394f6.css.map",
-    "main.828c6979.js.map": "/passionweb/static/js/main.828c6979.js.map"
+    "main.ac233b0b.css.map": "/passionweb/static/css/main.ac233b0b.css.map",
+    "main.126b73d9.js.map": "/passionweb/static/js/main.126b73d9.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fe394f6.css",
-    "static/js/main.828c6979.js"
+    "static/css/main.ac233b0b.css",
+    "static/js/main.126b73d9.js"
   ]
 }
