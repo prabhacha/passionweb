@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { initGA } from './components/analytics';
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,6 +14,11 @@ export default function App() {
     };
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+   useEffect(() => {
+    console.log("Calling initGA...");
+    initGA();
   }, []);
 
   const scrollToSection = (id) => (e) => {
@@ -29,8 +35,8 @@ export default function App() {
       {/* Navbar */}
       <header className={`fixed w-full top-0 z-50 transition-colors duration-300 ${scrolled ? 'bg-white shadow' : 'bg-transparent'}`}>
         <nav className="container mx-auto p-4 flex justify-between items-center">
-          <h1 className="text-xl font-bold text-red-500">Passion</h1>
-
+          <h1 className="text-xl font-bold text-red-500">ClearFiles</h1>
+<p className="text-sm text-gray-500">Your Work Our Passion</p>
           {/* Hamburger button */}
           <button
             className="md:hidden text-gray-700"
@@ -85,14 +91,26 @@ export default function App() {
       {/* About */}
       <motion.section
         id="about"
-        className="py-20 px-6 bg-gray-100 text-center"
+        className="py-20 px-6 bg-gray-100"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        <h3 className="text-3xl font-semibold mb-4">About Us</h3>
-        <p className="max-w-2xl mx-auto text-gray-700">We are a team of passionate developers and designers who love crafting modern and responsive websites.</p>
+        <h3 className="text-3xl font-semibold mb-4 text-center">About Us</h3>
+        <p className="text-left text-gray-700">
+          With over 7.5 years of rich experience in the IT industry, Vyankatesh Jadhav is a passionate software professional and the visionary founder of [Your Company Name]. Throughout a career spanning multiple domains and technologies, [he/she/they] has consistently delivered innovative, reliable, and scalable software solutions for businesses across various industries.</p>
+        <p className="text-left text-gray-700">Driven by a commitment to quality and a deep understand.
+          ing of modern digital demands, Vyankatesh Jadhav established nAsh solution with a clear mission — to help businesses embrace digital transformation, reduce paper dependency, and contribute to building a greener, more sustainable world.</p>
+        <p className="text-left text-gray-700">Specializing in custom software development, enterprise applications, and digital solutions, the company focuses on empowering clients by turning their aspirational goals into functional, future-ready technology products.</p>
+        <p className="text-left text-gray-700">At nAsh solution, we believe in:</p>
+<ul><li>	Delivering software with passion and precision</li>
+<li>Building strong, transparent relationships with clients</li>
+<li>Creating solutions that not only solve problems but also drive growth and innovation</li>
+</ul>
+<p className="text-left text-gray-700">Join us as we move businesses forward, one smart solution at a time.
+
+        </p>
       </motion.section>
 
       {/* Services */}
