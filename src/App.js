@@ -98,19 +98,20 @@ export default function App() {
         transition={{ duration: 0.8 }}
       >
         <h3 className="text-3xl font-semibold mb-4 text-center">About Us</h3>
-        <p className="text-left text-gray-700">
+         <div class="max-w-6xl mx-auto text-left space-y-6 text-gray-700">
+        <p>
           With over 7.5 years of rich experience in the IT industry, Vyankatesh Jadhav is a passionate software professional and the visionary founder of [Your Company Name]. Throughout a career spanning multiple domains and technologies, [he/she/they] has consistently delivered innovative, reliable, and scalable software solutions for businesses across various industries.</p>
-        <p className="text-left text-gray-700">Driven by a commitment to quality and a deep understand.
+        <p>Driven by a commitment to quality and a deep understand.
           ing of modern digital demands, Vyankatesh Jadhav established nAsh solution with a clear mission — to help businesses embrace digital transformation, reduce paper dependency, and contribute to building a greener, more sustainable world.</p>
-        <p className="text-left text-gray-700">Specializing in custom software development, enterprise applications, and digital solutions, the company focuses on empowering clients by turning their aspirational goals into functional, future-ready technology products.</p>
-        <p className="text-left text-gray-700">At nAsh solution, we believe in:</p>
+        <p>Specializing in custom software development, enterprise applications, and digital solutions, the company focuses on empowering clients by turning their aspirational goals into functional, future-ready technology products.</p>
+        <p>At nAsh solution, we believe in:</p>
 <ul><li>	Delivering software with passion and precision</li>
 <li>Building strong, transparent relationships with clients</li>
 <li>Creating solutions that not only solve problems but also drive growth and innovation</li>
 </ul>
-<p className="text-left text-gray-700">Join us as we move businesses forward, one smart solution at a time.
+<p>Join us as we move businesses forward, one smart solution at a time.
 
-        </p>
+        </p></div>
       </motion.section>
 
       {/* Services */}
