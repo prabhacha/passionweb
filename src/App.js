@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { initGA } from './components/analytics';
+import { Smartphone, Globe, Monitor, Users } from "lucide-react";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function App() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-   useEffect(() => {
+  useEffect(() => {
     console.log("Calling initGA...");
     initGA();
   }, []);
@@ -35,8 +36,10 @@ export default function App() {
       {/* Navbar */}
       <header className={`fixed w-full top-0 z-50 transition-colors duration-300 ${scrolled ? 'bg-white shadow' : 'bg-transparent'}`}>
         <nav className="container mx-auto p-4 flex justify-between items-center">
-          <h1 className="text-xl font-bold text-red-500">ClearFiles</h1>
-<p className="text-sm text-gray-500">Your Work Our Passion</p>
+          <div className="flex flex-col">
+            <h1 className="text-xl font-bold text-red-500">ClearFiles</h1>
+            <p className="text-sm text-gray-500 tracking-wide">Your Work, Our Passion</p>
+          </div>
           {/* Hamburger button */}
           <button
             className="md:hidden text-gray-700"
@@ -44,7 +47,7 @@ export default function App() {
             aria-label="Toggle menu"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2"
-                 viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+              viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
               <path d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
@@ -61,7 +64,7 @@ export default function App() {
       </header>
 
       {/* Hero */}
-{/* <section className="relative w-full h-[500px] bg-black overflow-hidden mt-16">
+      {/* <section className="relative w-full h-[500px] bg-black overflow-hidden mt-16">
   <video
     className="w-full h-[500px] object-cover"
   src="samplevideo.mp4"
@@ -71,14 +74,14 @@ export default function App() {
     Your browser does not support the video tag.
   </video>
 </section> */}
-<video
-  src="Our-Passion.mp4"
-  controls
-  width="100%"
-  height="360"
-  autoPlay
-  playsInline
-/>
+      <video
+        src="Our-Passion.mp4"
+        controls
+        width="100%"
+        height="360"
+        autoPlay
+        playsInline
+      />
 
 
 
@@ -98,20 +101,20 @@ export default function App() {
         transition={{ duration: 0.8 }}
       >
         <h3 className="text-3xl font-semibold mb-4 text-center">About Us</h3>
-         <div class="max-w-6xl mx-auto text-left space-y-6 text-gray-700">
-        <p>
-          With over 7.5 years of rich experience in the IT industry, Vyankatesh Jadhav is a passionate software professional and the visionary founder of [Your Company Name]. Throughout a career spanning multiple domains and technologies, [he/she/they] has consistently delivered innovative, reliable, and scalable software solutions for businesses across various industries.</p>
-        <p>Driven by a commitment to quality and a deep understand.
-          ing of modern digital demands, Vyankatesh Jadhav established nAsh solution with a clear mission — to help businesses embrace digital transformation, reduce paper dependency, and contribute to building a greener, more sustainable world.</p>
-        <p>Specializing in custom software development, enterprise applications, and digital solutions, the company focuses on empowering clients by turning their aspirational goals into functional, future-ready technology products.</p>
-        <p>At nAsh solution, we believe in:</p>
-<ul><li>	Delivering software with passion and precision</li>
-<li>Building strong, transparent relationships with clients</li>
-<li>Creating solutions that not only solve problems but also drive growth and innovation</li>
-</ul>
-<p>Join us as we move businesses forward, one smart solution at a time.
+        <div class="max-w-6xl mx-auto text-left space-y-6 text-gray-700">
+          <p>
+            With over 7.5 years of rich experience in the IT industry, Vyankatesh Jadhav is a passionate software professional and the visionary founder of nAsh solution. Throughout a career spanning multiple domains and technologies, He has consistently delivered innovative, reliable, and scalable software solutions for businesses across various industries.</p>
+          <p>Driven by a commitment to quality and a deep understand.
+            ing of modern digital demands, Vyankatesh Jadhav established nAsh solution with a clear mission — to help businesses embrace digital transformation, reduce paper dependency, and contribute to building a greener, more sustainable world.</p>
+          <p>Specializing in custom software development, enterprise applications, and digital solutions, the company focuses on empowering clients by turning their aspirational goals into functional, future-ready technology products.</p>
+          <p>At nAsh solution, we believe in:</p>
+          <ul><li>	Delivering software with passion and precision</li>
+            <li>Building strong, transparent relationships with clients</li>
+            <li>Creating solutions that not only solve problems but also drive growth and innovation</li>
+          </ul>
+          <p>Join us as we move businesses forward, one smart solution at a time.
 
-        </p></div>
+          </p></div>
       </motion.section>
 
       {/* Services */}
@@ -123,12 +126,26 @@ export default function App() {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        <h3 className="text-3xl font-semibold mb-10">Our Services</h3>
+        <h3 className="text-3xl font-semibold mb-10 text-center">Our Services</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div className="p-6 bg-gray-100 rounded shadow">Web Design</div>
-          <div className="p-6 bg-gray-100 rounded shadow">Web Development</div>
-          <div className="p-6 bg-gray-100 rounded shadow">SEO Optimization</div>
+          <div className="p-6 bg-gray-100 rounded shadow flex flex-col items-center">
+            <Smartphone className="w-16 h-16 text-blue-500 mb-4" />
+            <p className="text-lg font-medium">Mobile Application</p>
+          </div>
+          <div className="p-6 bg-gray-100 rounded shadow flex flex-col items-center">
+            <Globe className="w-16 h-16 text-green-500 mb-4" />
+            <p className="text-lg font-medium">Web Application</p>
+          </div>
+          <div className="p-6 bg-gray-100 rounded shadow flex flex-col items-center">
+            <Monitor className="w-16 h-16 text-purple-500 mb-4" />
+            <p className="text-lg font-medium">Desktop Application</p>
+          </div>
+          <div className="p-6 bg-gray-100 rounded shadow flex flex-col items-center">
+            <Users className="w-16 h-16 text-red-500 mb-4" />
+            <p className="text-lg font-medium">IT Consulting</p>
+          </div>
         </div>
+
       </motion.section>
 
       {/* Portfolio */}
