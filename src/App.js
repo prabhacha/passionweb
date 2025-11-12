@@ -115,6 +115,25 @@ export default function App() {
           <p>Join us as we move businesses forward, one smart solution at a time.
 
           </p></div>
+
+
+
+
+ <h3 className="text-3xl font-semibold mb-4 text-center">Vision Statement</h3>
+        <div class="max-w-6xl mx-auto text-left space-y-6 text-gray-700">
+          <p>
+           Our vision is to drive a sustainable future by minimizing paper consumption, preserving natural resources, and empowering organizations to embrace digital transformation.</p>
+           
+            </div>
+            
+ <h3 className="text-3xl font-semibold mb-4 text-center">Mission Statement</h3>
+        <div class="max-w-6xl mx-auto text-left space-y-6 text-gray-700">
+-
+<p>Driven by our passion for innovation, we create software solutions that turn your objectives into tangible results, guiding your business toward its desired future.          </p></div>
+
+
+
+
       </motion.section>
 
       {/* Services */}
