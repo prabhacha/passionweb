@@ -56,6 +56,8 @@ export default function App() {
           <ul className={`md:flex md:space-x-6 absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none transition-all duration-300 ease-in-out
             ${menuOpen ? 'block' : 'hidden'} md:block text-center md:text-left`}>
             <li className="py-2 md:py-0"><a href="#about" onClick={scrollToSection('about')} className="block px-4 hover:text-red-500">About</a></li>
+            <li className="py-2 md:py-0"><a href="#vision" onClick={scrollToSection('vision')} className="block px-4 hover:text-red-500">Vision</a></li>
+            <li className="py-2 md:py-0"><a href="#mission" onClick={scrollToSection('mission')} className="block px-4 hover:text-red-500">Mission</a></li>
             <li className="py-2 md:py-0"><a href="#services" onClick={scrollToSection('services')} className="block px-4 hover:text-red-500">Services</a></li>
             <li className="py-2 md:py-0"><a href="#portfolio" onClick={scrollToSection('portfolio')} className="block px-4 hover:text-red-500">Portfolio</a></li>
             <li className="py-2 md:py-0"><a href="#contact" onClick={scrollToSection('contact')} className="block px-4 hover:text-red-500">Contact</a></li>
@@ -119,23 +121,41 @@ export default function App() {
 
 
 
- <h3 className="text-3xl font-semibold mb-4 text-center">Vision Statement</h3>
-        <div class="max-w-6xl mx-auto text-left space-y-6 text-gray-700">
-          <p>
-           Our vision is to drive a sustainable future by minimizing paper consumption, preserving natural resources, and empowering organizations to embrace digital transformation.</p>
-           
-            </div>
-            
- <h3 className="text-3xl font-semibold mb-4 text-center">Mission Statement</h3>
-        <div class="max-w-6xl mx-auto text-left space-y-6 text-gray-700">
--
-<p>Driven by our passion for innovation, we create software solutions that turn your objectives into tangible results, guiding your business toward its desired future.          </p></div>
+
 
 
 
 
       </motion.section>
+      <motion.section
+        id="about"
+        className="py-20 px-6 bg-gray-100"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}>
+        <h3 className="text-3xl font-semibold mb-4 text-center">Vision</h3>
+        <div class="max-w-6xl mx-auto text-left space-y-6 text-gray-700">
+          <p>
+            Our vision is to drive a sustainable future by minimizing paper consumption, preserving natural resources, and empowering organizations to embrace digital transformation.</p>
 
+        </div>
+      </motion.section>
+
+      <motion.section
+        id="about"
+        className="py-20 px-6 bg-gray-100"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}>
+        <h3 className="text-3xl font-semibold mb-4 text-center">Mission Statement</h3>
+        <div class="max-w-6xl mx-auto text-left space-y-6 text-gray-700">
+          -
+          <p>Driven by our passion for innovation, we create software solutions that turn your objectives into tangible results, guiding your business toward its desired future.          </p></div>
+
+
+      </motion.section>
       {/* Services */}
       <motion.section
         id="services"
