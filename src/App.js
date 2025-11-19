@@ -55,7 +55,7 @@ export default function App() {
           {/* Menu items */}
           <ul className={`md:flex md:space-x-6 absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none transition-all duration-300 ease-in-out
             ${menuOpen ? 'block' : 'hidden'} md:block text-center md:text-left`}>
-            <li className="py-2 md:py-0"><a href="#about" onClick={scrollToSection('about')} className="block px-4 hover:text-red-500">About</a></li>
+            <li className="py-2 md:py-0"><a href="#about" onClick={scrollToSection('about')} className="block px-4 hover:text-red-500">About Us</a></li>
             <li className="py-2 md:py-0"><a href="#vision" onClick={scrollToSection('vision')} className="block px-4 hover:text-red-500">Vision</a></li>
             <li className="py-2 md:py-0"><a href="#mission" onClick={scrollToSection('mission')} className="block px-4 hover:text-red-500">Mission</a></li>
             <li className="py-2 md:py-0"><a href="#services" onClick={scrollToSection('services')} className="block px-4 hover:text-red-500">Services</a></li>
@@ -128,7 +128,7 @@ export default function App() {
 
       </motion.section>
       <motion.section
-        id="about"
+        id="vision"
         className="py-20 px-6 bg-gray-100"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -143,13 +143,13 @@ export default function App() {
       </motion.section>
 
       <motion.section
-        id="about"
+        id="mission"
         className="py-20 px-6 bg-gray-100"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}>
-        <h3 className="text-3xl font-semibold mb-4 text-center">Mission Statement</h3>
+        <h3 className="text-3xl font-semibold mb-4 text-center">Mission</h3>
         <div class="max-w-6xl mx-auto text-left space-y-6 text-gray-700">
           -
           <p>Driven by our passion for innovation, we create software solutions that turn your objectives into tangible results, guiding your business toward its desired future.          </p></div>
