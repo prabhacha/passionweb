@@ -187,22 +187,120 @@ export default function App() {
 
       </motion.section>
 
-      {/* Portfolio */}
-      <motion.section
-        id="portfolio"
-        className="py-20 px-6 bg-gray-100 text-center"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-      >
-        <h3 className="text-3xl font-semibold mb-10">Our Work</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
-          <div className="bg-white p-4 shadow rounded">Project 1</div>
-          <div className="bg-white p-4 shadow rounded">Project 2</div>
-          <div className="bg-white p-4 shadow rounded">Project 3</div>
-        </div>
-      </motion.section>
+    
+{/* Enquiry Form */}
+<motion.section
+  id="enquiry"
+  className="py-20 px-6 bg-gray-100"
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+>
+  <h3 className="text-3xl font-semibold mb-10 text-center">Software Company Enquiry Form</h3>
+
+  <div className="max-w-3xl mx-auto bg-white shadow p-8 rounded-lg space-y-6">
+
+    {/* Company Name */}
+    <div>
+      <label className="block font-medium mb-1">Company Name</label>
+      <input type="text" className="w-full border p-2 rounded" />
+    </div>
+
+    {/* Contact Person */}
+    <div>
+      <label className="block font-medium mb-1">Contact Person</label>
+      <input type="text" className="w-full border p-2 rounded" />
+    </div>
+
+    {/* Email */}
+    <div>
+      <label className="block font-medium mb-1">Email Address</label>
+      <input type="email" className="w-full border p-2 rounded" />
+    </div>
+
+    {/* Phone */}
+    <div>
+      <label className="block font-medium mb-1">Phone Number</label>
+      <input type="text" className="w-full border p-2 rounded" />
+    </div>
+
+    {/* Website */}
+    <div>
+      <label className="block font-medium mb-1">Website (if any)</label>
+      <input type="text" className="w-full border p-2 rounded" />
+    </div>
+
+    {/* Nature of Enquiry */}
+    <div>
+      <label className="block font-medium mb-2">Nature of Enquiry</label>
+      <div className="space-y-2">
+        <label className="flex items-center gap-2"><input type="checkbox" /> Software Development</label>
+        <label className="flex items-center gap-2"><input type="checkbox" /> Website Development</label>
+        <label className="flex items-center gap-2"><input type="checkbox" /> Mobile App Development</label>
+        <label className="flex items-center gap-2"><input type="checkbox" /> IT Consulting</label>
+        <label className="flex items-center gap-2"><input type="checkbox" /> Support & Maintenance</label>
+        <label className="flex items-center gap-2">
+          <input type="checkbox" /> Other (please specify)
+          <input type="text" className="border p-1 rounded ml-2 flex-1" />
+        </label>
+      </div>
+    </div>
+
+    {/* Brief Description */}
+    <div>
+      <label className="block font-medium mb-1">Brief Description of Requirements</label>
+      <textarea className="w-full border p-2 rounded h-24"></textarea>
+    </div>
+
+    {/* Preferred Communication Method */}
+    <div>
+      <label className="block font-medium mb-2">Preferred Communication Method</label>
+      <div className="space-y-2">
+        <label className="flex items-center gap-2"><input type="checkbox" /> Email</label>
+        <label className="flex items-center gap-2"><input type="checkbox" /> Phone Call</label>
+        <label className="flex items-center gap-2"><input type="checkbox" /> Video Meeting</label>
+      </div>
+    </div>
+
+    {/* Timeline */}
+    <div>
+      <label className="block font-medium mb-2">Timeline</label>
+      <div className="space-y-2">
+        <label className="flex items-center gap-2"><input type="checkbox" /> Immediate</label>
+        <label className="flex items-center gap-2"><input type="checkbox" /> Within 1 month</label>
+        <label className="flex items-center gap-2"><input type="checkbox" /> Within 3 months</label>
+        <label className="flex items-center gap-2"><input type="checkbox" /> Not sure</label>
+      </div>
+    </div>
+
+    {/* Budget */}
+    <div>
+      <label className="block font-medium mb-1">Budget Estimate</label>
+      <input type="text" className="w-full border p-2 rounded" />
+    </div>
+
+    {/* Additional Comments */}
+    <div>
+      <label className="block font-medium mb-1">Additional Comments</label>
+      <textarea className="w-full border p-2 rounded h-20"></textarea>
+    </div>
+
+    {/* Consent */}
+    <div className="flex items-center gap-2">
+      <input type="checkbox" />
+      <label>I agree to receive further information and updates from the company.</label>
+    </div>
+
+    {/* Submit Button */}
+    <div className="text-center mt-6">
+      <button className="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600">
+        Submit Enquiry
+      </button>
+    </div>
+  </div>
+</motion.section>
+
 
       {/* Testimonials */}
       <motion.section
