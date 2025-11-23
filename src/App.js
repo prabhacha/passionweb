@@ -129,7 +129,8 @@ export default function App() {
       </motion.section>
       <motion.section
         id="vision"
-        className="py-20 px-6 bg-gray-100 bg-[url('/images/vision-bg.jpg')] bg-cover bg-center bg-no-repeat"
+         style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/vision-bg.jpeg)` }}
+        className="py-20 px-6 bg-gray-100"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
